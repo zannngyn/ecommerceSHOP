@@ -1,4 +1,29 @@
 # 🛒 EcommerceSHOP – Hướng dẫn cài đặt và khởi chạy
+## LƯU : CẦN CÓ DATABASE POSTGRESQL ĐƯỢC CÀI TRƯỚC, NẾU CHƯA CÓ VUI LÒNG CÀI ĐẶT
+
+### MacOS: 
+```homebrew
+brew install postgresql
+brew services start postgresql
+```
+
+### Windows:
+```powershell
+Set-ExecutionPolicy Bypass -Scope Process -Force; `
+[System.Net.ServicePointManager]::SecurityProtocol = `
+[System.Net.ServicePointManager]::SecurityProtocol -bor 3072; `
+iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
+choco install postgresql
+```
+
+### MacOS:
+```homebrew
+brew install postgresql
+brew services start postgresql
+```
+ mở pgadmin import ecommerce.sql 
+
+
 
 ## 📥 1. Clone dự án
 
