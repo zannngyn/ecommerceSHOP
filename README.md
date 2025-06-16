@@ -34,21 +34,23 @@ npm install
 
 Tạo file `.env` cho **client** và **server**, sau đó thêm các biến như sau:
 
-### 📁 **Client – `Client/.env`**
+### 📁 **Client – `Client/.env.local`**
 
-```env
+```env.local
 BACKEND_URL=http://localhost:3500
 AUTH_KEY=your_secure_key
 JWT_KEY=your_jwt_key
 
 NEXT_PUBLIC_FRONTEND_GOOGLE_CLIENT_ID=your_google_client_id
 NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY=your_stripe_key
+NEXT_PUBLIC_STRIPE_SECRET_KEY=your_stripe_secret_key
 NEXT_PUBLIC_DOMAIN=http://localhost:3000
+
 ```
 
 > 🔒 **Chú ý**: Các biến `NEXT_PUBLIC_` là bắt buộc với Next.js để sử dụng trên trình duyệt.
 
-### 📁 **Server – `Server/.env`**
+### 📁 **Server – `Server/.env` và thư mục gốc của dự án**
 
 ```env
 PORT=3500
@@ -73,6 +75,7 @@ GOOGLE_CLIENT_ID=your_google_client_id
 GOOGLE_CLIENT_SECRET=your_google_client_secret
 
 STRIPE_PUBLISHABLE_KEY=your_stripe_key
+STRIPE_SECRET_KEY=your_stripe_secret_key
 ```
 
 ## 🚀 5. Chạy dự án
