@@ -18,6 +18,7 @@ cd ecommerceSHOP-main
 
 ```bash
 cd Server
+rm -rf node_modules package-lock.json
 npm install
 ```
 
@@ -25,6 +26,7 @@ npm install
 
 ```bash
 cd ../Client
+rm -rf node_modules package-lock.json
 npm install
 ```
 
